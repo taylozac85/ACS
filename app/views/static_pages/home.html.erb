@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Apartment Cleaning Service for Airbnb hosts</title>
+    <meta name="description" content="Apartment Cleaning Service for Airbnb hosts">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
@@ -101,6 +101,22 @@
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
                     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+
+<!-- Adding Google Analytics
+================================================== -->
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38419802-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
   </head>
 
   <body>
@@ -113,12 +129,12 @@
           <div class="navbar-inner">
             <div class="container">
               <ul class="nav">
-                <li class="active"><%= link_to "Home", root_path %> </li>
-                <li><a href="book">Services</a></li>
-                <li><a href="book">Pricing</a></li>
-                <li><a href="book">Locations</a></li>
-                <li><a href="book">Contact</a></li>
-                <li><a href="book">Help</a></li>
+                <li class="active"><a href="http://still-springs-3943.herokuapp.com">Home</a> </li>
+                <li><a href="http://still-springs-3943.herokuapp.com/book">Services</a></li>
+                <li><a href="http://still-springs-3943.herokuapp.com">Pricing</a></li>
+                <li><a href="http://still-springs-3943.herokuapp.com">Locations</a></li>
+                <li><a href="http://still-springs-3943.herokuapp.com">Contact</a></li>
+                <li><a href="http://still-springs-3943.herokuapp.com">Help</a></li>
               </ul>
             </div>
           </div>
@@ -177,21 +193,6 @@
     <script src="../assets/js/bootstrap-collapse.js"></script>
     <script src="../assets/js/bootstrap-carousel.js"></script>
     <script src="../assets/js/bootstrap-typeahead.js"></script>
-
-<!-- Adding Google Analytics
-================================================== -->
-
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-38419802-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
 
   </body>
 </html>
