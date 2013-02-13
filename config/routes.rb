@@ -1,7 +1,12 @@
 AirbnbCleaningService::Application.routes.draw do
+  resources :users
+
   root to: 'static_pages#home'
 
   match "/book" => "static_pages#book"
+
+  # match 'user' => 'users#new', :as => 'user', :via => :get
+  # match 'user' => 'users#create', :as => 'user', :via => :post
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

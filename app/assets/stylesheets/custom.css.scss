@@ -1,6 +1,5 @@
 @import "bootstrap";
 
-
 body {
 	padding-top: 20px;
 	padding-bottom: 60px;
@@ -82,3 +81,39 @@ body {
 	color: #5A87D8;
 }
 
+/* Booking form */
+.support-body {
+	height: 580px;
+	width: 700px;
+	margin: 50px auto;
+	border-radius: 6px;
+	background-color: #F1F1F1;
+	-webkit-box-shadow: 0 3px 4px #C2C2C2;
+	padding: 0px 20px;
+	h2 {
+		border-bottom: 1px solid #cccccc;
+		padding: 10px 0px;
+		font-size: 20px;
+  }
+}
+
+#form {
+  padding-top: 10px;
+}
+
+.field {
+
+}
+
+.label {
+  margin-bottom: 50px;
+  font-style: bold;
+}
+
+#user_name, 
+#user_email,
+#user_phone_number,
+#user_address {
+  margin: 0px;
+  border-radius: 6px;
+}
