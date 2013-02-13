@@ -102,18 +102,41 @@ body {
 }
 
 .field {
-
+	height: 55px;
 }
 
 .label {
-  margin-bottom: 50px;
   font-style: bold;
+}
+
+#new_user {
+	margin-bottom: 0px;
 }
 
 #user_name, 
 #user_email,
 #user_phone_number,
-#user_address {
+#user_address,
+#booking_date,
+#booking_time {
   margin: 0px;
   border-radius: 6px;
 }
+
+#booking_sheets,
+#booking_washer {
+  margin-bottom: 0px;
+  border-radius: 6px;
+  margin-right: 7px;
+}
+
+#last {
+	margin-bottom: 20px;
+}
+
+#checkbox {
+	height: 25px;
+	margin-bottom: 10px;
+}
+
+

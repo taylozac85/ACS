@@ -1,0 +1,72 @@
+<div class="support-body">
+  <h2>Please fill in the information below to process booking</h2>
+  <div id="form">
+    <%= form_for(@user) do |f| %>
+      <% if @user.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+          <ul>
+          <% @user.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div class="field">
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+      </div>
+      <div class="field">
+        <%= f.label :email %>
+        <%= f.text_field :email %>
+      </div>
+      <div class="field">
+        <%= f.label :phone_number %>
+        <%= f.text_field :phone_number %>
+      </div>
+      <div class="field">
+        <%= f.label :address %>
+        <%= f.text_field :address %>
+      </div>
+    <% end %>
+  
+  <!-- Form for booking -->
+
+    <%= form_for(@booking) do |f| %>
+      <% if @booking.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@booking.errors.count, "error") %> prohibited this booking from being saved:</h2>
+
+          <ul>
+          <% @booking.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div class="field">
+        <%= f.label :date %>
+        <%= f.date_select :date %>
+      </div>
+      <div class="field" id="last">
+        <%= f.label :time %>
+        <%= f.time_select :time %>
+      </div>
+      <div class="field", id="checkbox">
+        <%= f.check_box :sheets, :style => "float:left;" %>
+        <%= f.label :sheets, "My apartment has extra sheets and towels", :style => "float:left;" %>
+      </div>
+      <div class="field", id="checkbox">
+        <%= f.check_box :washer, :style => "float:left;" %>
+        <%= f.label :washer, "My apartment has a washer and dryer", :style => "float:left;" %>
+      </div>
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+    <% end %>
+
+  </div>
+</div>
