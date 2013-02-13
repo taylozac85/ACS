@@ -1,206 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>HummingBird Apartment Cleaning Service for Airbnb hosts</title>
-    <meta name="description" content="Apartment Cleaning Service for Airbnb hosts">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="">
+<%= render "layouts/navbar" %>
 
-    <!-- Le styles -->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 60px;
-      }
+<!-- Jumbotron -->
+<div class="jumbotron">
+  <h1>Apartmet Cleaning Service</h1>
+  <p class="lead">for Airbnb hosts.</p>
+  <a class="btn btn-large btn-success" href="book">Book</a>
+</div>
 
-      /* Custom container */
-      .container {
-        margin: 0 auto;
-        max-width: 1000px;
-      }
-      .container > hr {
-        margin: 60px 0;
-      }
+<hr>
 
-      /* Main marketing message and sign up button */
-      .jumbotron {
-        margin: 80px 0;
-        text-align: center;
-      }
-      .jumbotron h1 {
-        font-size: 72px;
-        font-weight: normal;
-        line-height: 1;
-      }
-      .jumbotron .lead {
-        font-size: 50px;
-        font-weight: bold;
-        color: #5A87D8;
-        line-height: 1.25;
-        margin-bottom: 25px;
-      }
-      .jumbotron .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-      }
+<!-- Example row of columns -->
+<div class="row-fluid">
+  <div class="span4">
+    <h2>Cleaning</h2>
+    <p>Service designed for Airbnb hosts. All cleaners understand how to prepare your rental specifically for Airbnb.</p>
+    <!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
+  </div>
+  <div class="span4">
+    <h2>Sheets and Towels</h2>
+    <p>We provide clean sheets and towels so you don't have to worry about sharing your own.</p>
+    <!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
+ </div>
+  <div class="span4">
+    <h2>Other Services</h2>
+    <p>Arrange airport pick-up, guest welcome packages, key drop off and other ancillary services.</p>
+    <!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
+  </div>
+</div>
 
-      /* Supporting marketing content */
-      .marketing {
-        margin: 60px 0;
-      }
-      .marketing p + h4 {
-        margin-top: 28px;
-      }
+<hr>
 
-
-      /* Customize the navbar links to be fill the entire space of the .navbar */
-      .navbar .navbar-inner {
-        padding: 0;
-      }
-      .navbar .nav {
-        margin: 0;
-        display: table;
-        width: 100%;
-      }
-      .navbar .nav li {
-        display: table-cell;
-        width: 1%;
-        float: none;
-      }
-      .navbar .nav li a {
-        font-weight: bold;
-        text-align: center;
-        border-left: 1px solid rgba(255,255,255,.75);
-        border-right: 1px solid rgba(0,0,0,.1);
-      }
-      .navbar .nav li:first-child a {
-        border-left: 0;
-        border-radius: 3px 0 0 3px;
-      }
-      .navbar .nav li:last-child a {
-        border-right: 0;
-        border-radius: 0 3px 3px 0;
-      }
-      .small {
-        font-weight: bold;
-        color: #5A87D8;
-      }
-      .brand {
-        font-weight: bold;
-        color: #5A87D8;
-      }
-    </style>
-    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="../assets/js/html5shiv.js"></script>
-    <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
-
-<!-- Adding Google Analytics
-================================================== -->
-
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-38419802-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-
-  </head>
-
-  <body>
-
-    <div class="container">
-
-      <div class="masthead">
-        <h3><span class="brand">HummingBird</span> </h3>
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="container">
-              <ul class="nav">
-                <li class="active"><a href="http://still-springs-3943.herokuapp.com">Home</a> </li>
-                <li><a href="http://still-springs-3943.herokuapp.com/book">Services</a></li>
-                <li><a href="http://still-springs-3943.herokuapp.com">Pricing</a></li>
-                <li><a href="http://still-springs-3943.herokuapp.com">Locations</a></li>
-                <li><a href="http://still-springs-3943.herokuapp.com">Contact</a></li>
-                <li><a href="http://still-springs-3943.herokuapp.com">Help</a></li>
-              </ul>
-            </div>
-          </div>
-        </div><!-- /.navbar -->
-      </div>
-
-      <!-- Jumbotron -->
-      <div class="jumbotron">
-        <h1>Apartmet Cleaning Service</h1>
-        <p class="lead">for Airbnb hosts.</p>
-        <a class="btn btn-large btn-success" href="book">Book</a>
-      </div>
-
-      <hr>
-
-      <!-- Example row of columns -->
-      <div class="row-fluid">
-        <div class="span4">
-          <h2>Cleaning</h2>
-          <p>Service designed for Airbnb hosts. All cleaners understand how to prepare your rental specifically for Airbnb.</p>
-          <!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
-        </div>
-        <div class="span4">
-          <h2>Sheets and Towels</h2>
-          <p>We provide clean sheets and towels so you don't have to worry about sharing your own.</p>
-          <!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
-       </div>
-        <div class="span4">
-          <h2>Other Services</h2>
-          <p>Arrange airport pick-up, guest welcome packages, key drop off and other ancillary services.</p>
-          <!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
-        </div>
-      </div>
-
-      <hr>
-
-      <%= render "static_pages/comments" %>
-
-      <hr>
-
-      <div class="footer">
-        <p>HummingBird is in no way affiliated with © Airbnb, Inc.</p>
-      </div>
-
-    </div> <!-- /container -->
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap-transition.js"></script>
-    <script src="../assets/js/bootstrap-alert.js"></script>
-    <script src="../assets/js/bootstrap-modal.js"></script>
-    <script src="../assets/js/bootstrap-dropdown.js"></script>
-    <script src="../assets/js/bootstrap-scrollspy.js"></script>
-    <script src="../assets/js/bootstrap-tab.js"></script>
-    <script src="../assets/js/bootstrap-tooltip.js"></script>
-    <script src="../assets/js/bootstrap-popover.js"></script>
-    <script src="../assets/js/bootstrap-button.js"></script>
-    <script src="../assets/js/bootstrap-collapse.js"></script>
-    <script src="../assets/js/bootstrap-carousel.js"></script>
-    <script src="../assets/js/bootstrap-typeahead.js"></script>
-
-  </body>
-</html>
+<%= render "static_pages/comments" %>

@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>HummingBird Apartment Cleaning Service for Airbnb hosts</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+<html lang="en">
+  
+  <head>
+    <title>HummingBird Apartment Cleaning Service for Airbnb hosts</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <meta charset="utf-8">  
+    <meta name="description" content="Apartment Cleaning Service for Airbnb hosts">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
 
-  <!-- Adding Google Analytics
-================================================== -->
+    <!-- Adding Google Analytics
+  ================================================== -->
 
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -20,11 +25,13 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-    
-</head>
-<body>
+  </head>
 
-<%= yield %>
+  <body>
+    <div class="container">
+      <%= yield %>
+      <%= render "layouts/footer" %>
+    </div>
+  </body>
 
-</body>
 </html>
