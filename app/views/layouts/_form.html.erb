@@ -53,7 +53,7 @@
       </div>
       <div class="field" id="last">
         <%= f.label :time %>
-        <%= f.time_select :time %>
+        <%= am_pm_hour_select f, :time, start:10 %>
       </div>
       <div class="field", id="checkbox">
         <%= f.check_box :sheets, :style => "float:left;" %>
@@ -63,6 +63,13 @@
         <%= f.check_box :washer, :style => "float:left;" %>
         <%= f.label :washer, "My apartment has a washer and dryer", :style => "float:left;" %>
       </div>
+      <div class="field", id="description">
+        <%= f.label :description %>
+        <%= f.text_area :description %>
+      </div>
+    <% end %>
+
+    <%= form_for(@user) do |f| %>
       <div class="actions">
         <%= f.submit "Book Now" %>
       </div>
