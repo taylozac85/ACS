@@ -26,6 +26,7 @@ class UsersController < ApplicationController
   def new
     @user = User.new
     @booking = Booking.new
+    # @user.bookings.build
 
     respond_to do |format|
       format.html # new.html.erb
@@ -42,8 +43,6 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(params[:user])
-
-
 
     respond_to do |format|
       if @user.save

@@ -1,0 +1,13 @@
+<%= form_for(@user) do |f| %>
+  <p>
+  	Name: <%= f.text_field :name %>
+  </p>
+  <% for booking in @user.bookings %>
+  	<%= fields_for "user[booking_attributes][]", booking do |booking_form| %>
+  	  <p>
+  	    Booking: <%= booking_form.text_field :description %>
+  	  </p>
+  	<% end %>
+  <% end %>
+  <p><%= submit_tag "Book Now" %></p>
+ <% end %>
