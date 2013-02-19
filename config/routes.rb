@@ -1,7 +1,5 @@
 AirbnbCleaningService::Application.routes.draw do
   resources :bookings
-
-
   resources :users
 
   root to: 'static_pages#home'
